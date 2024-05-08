@@ -14,10 +14,11 @@
   "license": "ISC",
   "scripts": {
     "watch": "tsc --watch",
-    "prepublishOnly": "rm -rf ./dist && rm -f package-lock.json && npm install --also=dev && tsc"
+    "prepublishOnly": "rm -rf ./dist && rm -f package-lock.json && npm install --also=dev && tsc",
+    "prepare": "tsc"
   },
   "dependencies": {
-    "@spectre/grpc": "file:../spectre-grpc"
+    "@spectre/grpc": "github:spectre-project/spectre-grpc"
   },
   "devDependencies": {
     "@types/node": "^14.14.9",
